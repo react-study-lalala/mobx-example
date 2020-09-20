@@ -1,0 +1,41 @@
+html, head, body {
+  margin: 0;
+  padding: 0;
+}
+
+.text-left { text-align: left !important; }
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+
+#GOOGLE_MAP {
+  position: fixed;
+  width: calc(100% - 320px);
+  margin-left: 320px;
+  height: 100vh;
+}
+
+#ASIDE {
+  position: fixed;
+  width: 320px;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 1;
+  padding: 10px;
+}
+/* #ASIDE */
+small.info{
+  word-break: break-all;
+}
+
+#STORE_INFO {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  z-index: 2;
+  transition: .3s;
+  opacity: 0;
+}
+
+#STORE_INFO.active{
+  opacity: 1;
+}
